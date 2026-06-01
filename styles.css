@@ -323,6 +323,7 @@ a {
   border: 12px solid var(--white);
   border-radius: 0;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 26px 60px rgba(21, 38, 73, 0.2);
 }
@@ -336,8 +337,8 @@ a {
   background-image:
     linear-gradient(180deg, rgba(21, 38, 73, 0.02), rgba(21, 38, 73, 0.14)),
     url("images/about_us_1.jpeg");
-  background-position: center 90%;
-  background-size: 100%;
+  background-position: center, center 90%;
+  background-size: cover;
 }
 
 .about-photo-wide {
