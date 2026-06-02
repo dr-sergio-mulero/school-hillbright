@@ -349,7 +349,7 @@ a {
   z-index: 3;
   background-image:
     linear-gradient(180deg, rgba(21, 38, 73, 0.03), rgba(21, 38, 73, 0.12)),
-    url("images/about_us_2.jpg");
+    url("images/about_us_2.jpeg");
   background-position: center 60%;
 }
 
@@ -2585,18 +2585,18 @@ a {
 }
 
 .program-hero-kinder {
-  background-image: url("images/kinder_hero.jpg");
-  background-position: center 1%;
+  background-image: url("images/kinder_hero.jpeg");
+  background-position: center 55%;
 }
 
 .program-hero-primaria {
-  background-image: url("images/primaria_hero.jpg");
-  background-position: center 43%;
+  background-image: url("images/primaria_hero.jpeg");
+  background-position: center 5%;
 }
 
 .program-hero-secundaria {
-  background-image: url("images/secundaria_hero.jpg");
-  background-position: center 75%;
+  background-image: url("images/secundaria_hero.jpeg");
+  background-position: center 22%;
 }
 
 .program-hero-specialized {
@@ -2708,7 +2708,7 @@ a {
 
 .program-snapshot-kinder {
   background-image: url("images/niveles_kinder.jpeg");
-  background-position: center 34%;
+  background-position: 38% 34%;
 }
 
 .program-snapshot-primaria {
@@ -2718,6 +2718,7 @@ a {
 
 .program-snapshot-secundaria {
   background-image: url("images/niveles_secundaria.jpeg");
+  background-position: 99% center;
 }
 
 .program-snapshot-specialized {
@@ -2869,13 +2870,13 @@ a {
 }
 
 .secundaria-detail-two {
-  background-image: url("images/secundaria_background_2.jpg");
-  background-position: center 15%;
+  background-image: url("images/secundaria_background_2.jpeg");
+  background-position: center 35%;
 }
 
 .secundaria-detail-three {
-  background-image: url("images/secundaria_background_3.jpg");
-  background-position: center 8%;
+  background-image: url("images/secundaria_background_3.jpeg");
+  background-position: center 20%;
 }
 
 .program-population-grid {
