@@ -1,3 +1,4 @@
+const footerMounts = document.querySelectorAll("[data-site-footer]");
 const header = document.querySelector("#site-header");
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".main-nav a, .mobile-nav a");
@@ -8,6 +9,62 @@ const revealTitles = document.querySelectorAll("[data-reveal-title]");
 const hero = document.querySelector(".hero, .program-hero");
 
 document.documentElement.classList.add("js-enabled");
+
+const renderSiteFooter = (mount) => {
+  const isHomeFooter = mount.dataset.footerScope === "home";
+  const sectionPrefix = isHomeFooter ? "" : "index.html";
+
+  mount.outerHTML = `
+    <footer class="site-footer" id="contacto">
+      <div class="site-footer-overlay"></div>
+      <div class="container container-2xl site-footer-inner">
+        <div class="site-footer-hero">
+          <p class="site-footer-kicker">Contacto</p>
+          <h2>¿Listo para dar el siguiente paso?</h2>
+          <p>
+            En Hillbright creemos que tu hijo no llegó a este mundo a ocupar un lugar - llego a transformarlo. Por eso formamos a cada alumno en los cinco ejes que construyen a una persona completa y extraordinaria: excelencia academica, bilinguismo de alto nivel, inteligencia emocional, fe solida en Cristo y liderazgo autogestivo.<br /><br />
+            Te invitamos a conocernos en persona. Agenda tu visita, camina por nuestros salones, haz tus preguntas - y revisa si este es el ambiente donde tu hijo desarrollara sus abilidades y sera honrado y empoderado para tener exito - los cupos son limitados, y la decision mas importante que tomaras por tu hijo este ano no deberia esperar. Agenda tu visita!
+          </p>
+          <a class="site-footer-button" href="https://wa.me/523312272850" target="_blank" rel="noreferrer">Agendar visita</a>
+        </div>
+
+        <div class="site-footer-divider"></div>
+
+        <div class="site-footer-links">
+          <div>
+            <h3>Links rápidos</h3>
+            <ul>
+              <li><a href="${sectionPrefix}#programas">Sobre Hillbright</a></li>
+              <li><a href="${sectionPrefix}#metodologia">Metodología</a></li>
+              <li><a href="kinder.html">Kinder</a></li>
+              <li><a href="primaria.html">Primaria</a></li>
+              <li><a href="secundaria.html">Secundaria</a></li>
+              <li><a href="atencion-especializada.html">Atención a Neurodivergentes</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Contacto</h3>
+            <ul>
+              <li><a href="mailto:contacto@hillbrightschool.edu">contacto@hillbrightschool.edu</a></li>
+              <li><a href="https://wa.me/523312272850" target="_blank" rel="noreferrer">WhatsApp 33-1227-2850</a></li>
+              <li>Av. Copernico 3850, col Arboledas, Zapopan, Jalisco, 45070, México</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="site-footer-bottom">
+          <div class="site-footer-brand">
+            <img src="images/hillside_logo.png" alt="Hillbright School" />
+          </div>
+          <p>&copy; 2026 Hillbright School</p>
+        </div>
+      </div>
+    </footer>
+  `;
+};
+
+footerMounts.forEach(renderSiteFooter);
 
 const syncMobileHeader = () => {
   const isMobile = window.matchMedia("(max-width: 860px)").matches;
