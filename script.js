@@ -23,7 +23,7 @@ const renderSiteFooter = (mount) => {
           <h2>¿Listo para dar el siguiente paso?</h2>
           <p>
             En Hillbright creemos que tu hijo no llegó a este mundo a ocupar un lugar - llego a transformarlo. Por eso formamos a cada alumno en los cinco ejes que construyen a una persona completa y extraordinaria: excelencia academica, bilinguismo de alto nivel, inteligencia emocional, fe solida en Cristo y liderazgo autogestivo.<br /><br />
-            Te invitamos a conocernos en persona. Agenda tu visita, camina por nuestros salones, haz tus preguntas - y revisa si este es el ambiente donde tu hijo desarrollara sus abilidades y sera honrado y empoderado para tener exito - los cupos son limitados, y la decision mas importante que tomaras por tu hijo este ano no deberia esperar. Agenda tu visita!
+            Te invitamos a conocernos en persona. Agenda tu visita, camina por nuestros salones, haz tus preguntas - y revisa si este es el ambiente donde tu hijo desarrollara sus abilidades y sera honrado y empoderado para tener exito - los cupos son limitados, y la decision mas importante que tomaras por tu hijo este año no deberia esperar. Agenda tu visita!
           </p>
           <a class="site-footer-button" href="https://wa.me/523312272850" target="_blank" rel="noreferrer">Agendar visita</a>
         </div>
